@@ -1,0 +1,16 @@
+// Last updated: 8/30/2025, 1:23:27 PM
+class Solution {
+public:
+    int differenceOfSums(int n, int m) {
+        int nums1=0;
+        int nums2=0;
+        for(int i=1;i<=n;i++){
+            if(i%m==0){
+                nums2+=i;
+            }else{
+                nums1+=i;
+            }
+        }
+        return nums1-nums2;
+    }
+};
